@@ -97,7 +97,7 @@ export function makeLogger(silent) {
   };
 }
 
-export function pathAndFilename(filepath, p = path) {
+export function pathAndFilename(filepath) {
   let { dir, name } = p.parse(filepath);
   return {
     currentDir: dir,
